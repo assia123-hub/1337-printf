@@ -6,18 +6,19 @@
 /*   By: aschalh <aschalh@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 12:00:20 by aschalh           #+#    #+#             */
-/*   Updated: 2024/11/26 15:20:47 by aschalh          ###   ########.fr       */
+/*   Updated: 2024/11/26 21:06:59 by aschalh          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putstr(char *s)
+int	ft_putstr(char *s)
 {
-	int i = 0;
+	int	i;
 
+	i = 0;
 	if (!s)
-		write(1, "(null)", 6);
+		s = "(null)";
 	while (s[i])
 	{
 		ft_putchar(s[i]);
